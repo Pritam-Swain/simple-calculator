@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Simple Calculator</title>
+  <link rel="icon" type="image/png" href="./assets/calculater.png" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" />
+  <link rel="stylesheet" href="style.CSS">
+</head>
+<body>
+  <div class="container">
+
+    <!-- Calculator Section -->
+    <div class="calculator">
+      <h4 class="text-center mb-3" style="color: aliceblue;">Calculator</h4>
+      <div class="calc-display" id="expression">0</div>
+
+      <!-- Row 1 -->
+      <div class="d-flex flex-wrap justify-content-between">
+        <button class="btn btn-secondary calc-btn" data-event_key="Num Lock" id="Num_Lock">Num<br>Lock</button>
+        <button class="btn btn-secondary calc-btn" data-event_key="CE">CE</button>
+        <button class="btn btn-secondary calc-btn" data-event_key="Delete">Del</button>
+        <button class="btn btn-secondary calc-btn" data-event_key="/">/</button>
+
+        <!-- Row 2 -->
+        <button class="btn btn-secondary calc-btn" data-event_key="7">7</button>
+        <button class="btn btn-secondary calc-btn" data-event_key="8">8</button>
+        <button class="btn btn-secondary calc-btn" data-event_key="9">9</button>
+        <button class="btn btn-secondary calc-btn" data-event_key="*">*</button>
+
+        <!-- Row 3 -->
+        <button class="btn btn-secondary calc-btn" data-event_key="4">4</button>
+        <button class="btn btn-secondary calc-btn" data-event_key="5">5</button>
+        <button class="btn btn-secondary calc-btn" data-event_key="6">6</button>
+        <button class="btn btn-secondary calc-btn" data-event_key="-">-</button>
+
+        <!-- Row 4 -->
+        <button class="btn btn-secondary calc-btn" data-event_key="1">1</button>
+        <button class="btn btn-secondary calc-btn" data-event_key="2">2</button>
+        <button class="btn btn-secondary calc-btn" data-event_key="3">3</button>
+        <button class="btn btn-secondary calc-btn" data-event_key="+">+</button>
+
+        <!-- Row 5 -->
+        <button class="btn btn-secondary calc-btn" style="flex: 1 1 120px" data-event_key="0">0</button>
+        <button class="btn btn-secondary calc-btn" data-event_key=".">.</button>
+        <button class="btn btn-secondary calc-btn" data-event_key="=">=</button>
+      </div>
+    </div>
+
+    <!-- History Section -->
+    <div class="history-section">
+      <div class="history-title">History</div>
+      <div id="history-list"></div>
+    </div>
+
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

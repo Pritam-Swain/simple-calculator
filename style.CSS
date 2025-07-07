@@ -1,0 +1,100 @@
+body {
+  background-color: black;
+  font-family: Arial, sans-serif;
+}
+
+.calculator {
+  background-color: #1f242d;
+  border: 2px solid #0ef;
+  border-radius: 15px;
+  padding: 15px;
+  box-shadow: 0 0 20px rgb(0, 238, 255, 0.7);
+  max-width: 360px;
+  width: 100%;
+}
+
+.calc-btn {
+  color: #0ef;
+  font-weight: 700;
+  background-color: #343a40;
+  width: 60px;
+  height: 60px;
+  font-size: 20px;
+  margin: 5px;
+  transition: background-color 0.3s ease;
+  border: 1px solid #0ef;
+  box-shadow: 2px 2px 5px #0ef;
+}
+
+.calc-btn:hover {
+ background-color: rgb(255, 255, 255, 0.3);
+  color: black;
+}
+
+#Num_Lock {
+  font-size: 13px;
+  font-weight: 900;
+}
+
+.calc-display {
+  background-color: #343a40;
+  color: #0ef;
+  height: 70px;
+  width: 100%;
+  font-size: 28px;
+  padding: 10px;
+  text-align: right;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0px 0px 12px rgb(0, 238, 255, 0.7);
+}
+
+.history-section {
+  background-color: #1f242d;
+  padding: 10px;
+  margin-left: 25px;
+  border-radius: 15px;
+  overflow-y: auto;
+  height: 500px;
+  width: 250px;
+  border: 1px solid #0ef;
+}
+
+.history-section:hover {
+  box-shadow: 0px 0px 15px rgb(0, 238, 255, 0.7);
+}
+
+.history-title {
+  color: aliceblue;
+  padding-left: 80px;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.history-item {
+  color: aliceblue;
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .history-section {
+    max-width: 80%;
+    margin-right: 0;
+    margin-top: 15px;
+  }
+}
